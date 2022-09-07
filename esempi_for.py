@@ -5,16 +5,36 @@ min, massimo, media
 num = int(input("Quanti voti vuoi inserire? "))
 voti = []
 for i in range(num):
-    print(i)
     voti.append(int(input("Voto " + str(i+1) + ": ")))
 print(voti)
 
-min = voti[0]
+if num > 0:
+    min = voti[0]
 for voto in voti:
     if voto < min:
         min = voto
-print(min)
+print("min: " + str(min))
 
-for lettera in 'CIAO':
-    print(lettera)
+if num > 0:
+    max = voti[0]
+for voto in voti:
+    if voto > max:
+        max = voto
+print("max: " + str(max))
+
+media = 0
+for voto in voti:
+#    media = media + voto
+    media += voto
+if num > 0:
+    media /= num
+#media = media / num
+print("media: " + str(media))
+
+s = ''
+for lettera in 'EDOARDO':
+    if lettera in 'aeiouAEIOUòàèìùÈ':    
+        s += lettera
+        #s = s + lettera
+print(s)
 # stampare le vocali del proprio nome
