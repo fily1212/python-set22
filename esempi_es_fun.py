@@ -9,6 +9,22 @@ def somma():
     n2 = lista_numeri.pop()
     lista_numeri.append(n1 + n2)
 
+def sottrazione():
+    n1 = lista_numeri.pop()
+    n2 = lista_numeri.pop()
+    lista_numeri.append(n2 - n1)
+
+def moltiplicazione():
+    n1 = lista_numeri.pop()
+    n2 = lista_numeri.pop()
+    lista_numeri.append(n2 * n1)
+
+def divisione():
+    n1 = lista_numeri.pop()
+    n2 = lista_numeri.pop()
+    lista_numeri.append(n2 / n1)
+
+
 def stampa():
     print(lista_numeri)
 
